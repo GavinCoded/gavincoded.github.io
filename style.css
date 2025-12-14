@@ -88,13 +88,8 @@ section {
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid #7c8cff;
-    box-shadow: 0 8px 32px rgba(124, 140, 255, 0.3);
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
-
-
 
 .pfp img {
     width: 100%;
@@ -296,8 +291,6 @@ h3::before {
     transition: all 0.3s;
     font-size: 1rem;
 }
-
-
 
 footer {
     text-align: center;
