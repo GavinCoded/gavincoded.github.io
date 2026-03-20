@@ -6,6 +6,7 @@
     window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 
   if (isReducedMotion) return;
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return;
 
   const nekoEl = document.createElement("div");
   let persistPosition = true;
