@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>gavinstrikes</title>
+        <title>gavinstrikes.info</title>
         <link rel="stylesheet" href="css/style.css" />
         <link
             rel="stylesheet"
@@ -15,23 +15,53 @@
         <div class="scanlines"></div>
 
         <div class="site_header">
-            <h1 class="glitch">gavinstrikes</h1>
-            <p>incompetent cybersecurity researcher</p>
+            <h1 class="glitch">gavinstrikes.info</h1>
+
         </div>
 
-       <div class="section">
-    <div class="section_label">about</div>
-    <table>
-        <tr>
-            <td class="row_label">location</td>
-            <td class="row_value">united states</td>
-        </tr>
-        <tr>
-            <td class="row_label">currently</td>
-            <td class="row_value" id="discord_status">...</td>
-        </tr>
-    </table>
-    </div>
+        <div class="discord_card" id="discord_card">
+            <a href="https://discord.com/users/735581916887121943" class="discord_icon_link" title="discord">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            <div class="discord_card_main">
+                <img class="discord_avatar" id="discord_avatar" src="" alt="" />
+                <div class="discord_info">
+                    <span class="discord_username" id="discord_username">gavinstrikes</span>
+                    <div class="discord_status_row">
+                        <span class="status_dot" id="status_dot"></span>
+                        <span class="status_label" id="status_label">offline</span>
+                    </div>
+                </div>
+            </div>
+            <div class="discord_activities" id="discord_activities">
+                <div class="activity spotify" id="activity_spotify">
+                    <img class="activity_art" id="spotify_art" src="" alt="" />
+                    <div class="activity_body">
+                        <span class="activity_name" id="spotify_song"></span>
+                        <span class="activity_detail" id="spotify_artist"></span>
+                        <div class="activity_progress">
+                            <div class="progress_track">
+                                <div class="progress_fill" id="spotify_progress_fill"></div>
+                            </div>
+                            <span class="progress_time" id="spotify_time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity game" id="activity_game">
+                    <img class="activity_art" id="game_art" src="" alt="" />
+                    <div class="activity_body">
+                        <span class="activity_name" id="game_name"></span>
+                        <span class="activity_detail" id="game_details"></span>
+                        <span class="activity_state" id="game_state"></span>
+                    </div>
+                </div>
+                <div class="extra_toggle" id="extra_toggle">
+                    <span id="extra_toggle_text"></span>
+                    <i class="fa-solid fa-chevron-down" id="extra_chevron"></i>
+                </div>
+                <div class="extra_list" id="extra_list"></div>
+            </div>
+        </div>
 
         <div class="section">
             <div class="section_label">skills</div>
@@ -111,8 +141,6 @@
             ></a>
         </div>
 
-        <script src="js/counter.js"></script>
         <script src="js/status.js"></script>
-        <script src="js/oneko.js" data-cat="oneko.gif"></script>
     </body>
 </html>
