@@ -47,29 +47,6 @@ body {
     padding-left: 0.5rem;
 }
 
-table {
-    border-collapse: collapse;
-}
-
-td {
-    padding: 0.3rem 0.5rem 0.3rem 0;
-    vertical-align: top;
-}
-
-.row_label {
-    color: #555;
-    min-width: 10rem;
-}
-
-.row_value {
-    color: #ccc;
-}
-
-.row_value.muted {
-    color: #444;
-    font-style: italic;
-}
-
 .tag {
     display: inline-block;
     background: #111;
@@ -171,5 +148,207 @@ a:hover {
     60%  { transform: translate(-1px, 2px); color: #fff; }
     80%  { transform: translate(1px, -2px); }
     100% { transform: translate(0); }
+}
+
+.discord_card {
+    background: #111;
+    border: 1px solid #222;
+    padding: 0.85rem 1rem;
+    max-width: 24rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.discord_icon_link {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.6rem;
+    font-size: 0.95rem;
+    color: #5865f2;
+    line-height: 1;
+}
+
+.discord_icon_link:hover {
+    color: #7983f5;
+}
+
+.discord_card_main {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.discord_avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.discord_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+    flex: 1;
+}
+
+.discord_username {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding-right: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.discord_status_row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.status_dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #747f8d;
+    flex-shrink: 0;
+}
+
+.status_label {
+    color: #888;
+    font-size: 0.75rem;
+    text-transform: lowercase;
+}
+
+.discord_activities {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.activity {
+    display: none;
+    gap: 0.65rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid #1a1a1a;
+}
+
+.activity_art {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.activity_body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+.activity_name {
+    color: #e0e0e0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activity_detail {
+    color: #888;
+    font-size: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activity_state {
+    color: #888;
+    font-size: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activity_progress {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.2rem;
+}
+
+.progress_track {
+    flex: 1;
+    height: 4px;
+    background: #222;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress_fill {
+    height: 100%;
+    width: 0%;
+    background: #1db954;
+    border-radius: 2px;
+    transition: width 0.3s linear;
+}
+
+.progress_time {
+    color: #666;
+    font-size: 0.65rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.extra_toggle {
+    display: none;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    color: #555;
+    font-size: 0.7rem;
+    padding-top: 0.4rem;
+    border-top: 1px solid #1a1a1a;
+    user-select: none;
+}
+
+.extra_toggle:hover {
+    color: #888;
+}
+
+.extra_toggle i {
+    font-size: 0.55rem;
+    transition: transform 0.2s;
+}
+
+.extra_list {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-top: 0.3rem;
+}
+
+.extra_row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.05rem;
+}
+
+.extra_row_name {
+    color: #999;
+    font-size: 0.7rem;
+}
+
+.extra_row_detail {
+    color: #666;
+    font-size: 0.65rem;
 }
 
